@@ -11,7 +11,7 @@ async function go() {
   let client = new MongoClient('mongodb+srv://vcMongo:TQF97Xsz4SP8ffV@cluster0.efq1taf.mongodb.net/TodoApp?retryWrites=true&w=majority');
   await client.connect();
   db = client.db();
-  app.listen(1000);
+  app.listen(2000);
 }
 
 go();
