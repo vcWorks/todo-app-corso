@@ -11,6 +11,13 @@ function itemTemplate(item) {
     `;
 }
 
+// lista cose da fare
+let liHTML = items.map(function(item) {
+    return itemTemplate(item);
+}).join('');
+
+document.getElementById("item-list").insertAdjacentHTML("beforeend", liHTML);
+
 //CREATE
 let createField = document.getElementById("create-field");
 document.getElementById("create-form").addEventListener("submit", function(event) {
